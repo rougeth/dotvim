@@ -14,7 +14,8 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 " Plugins
 Bundle 'kien/ctrlp.vim'
-" Bundle 'Lokaltog/powerline'
+"Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
@@ -37,8 +38,12 @@ set encoding=utf-8
 " => PluginsPowerline
 " -----------------------------------------------------------------------------
 
+" Airline
+set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+let g:airline_powerline_fonts = 1
+
 " Powerline
-" set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
+"set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2
 set noshowmode
 
