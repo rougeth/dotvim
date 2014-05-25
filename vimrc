@@ -14,6 +14,7 @@ call vundle#begin()
 Bundle 'gmarik/Vundle.vim'
 " Plugins
 Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
 "Bundle 'Lokaltog/powerline'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
@@ -27,7 +28,9 @@ Bundle 'sjl/gundo.vim'
 Bundle 'scrooloose/syntastic'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -35,20 +38,21 @@ call vundle#end()
 set encoding=utf-8
 
 " -----------------------------------------------------------------------------
-" => PluginsPowerline
+" => Plugins settings
 " -----------------------------------------------------------------------------
 
 " Airline
 set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
 let g:airline_powerline_fonts = 1
-
-" Powerline
-"set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2
 set noshowmode
 
 " Ctrlp
 nmap <c-b> :CtrlPBuffer<cr>
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 
 " -----------------------------------------------------------------------------
 " => Moving around, searching and patterns
@@ -104,12 +108,15 @@ set cursorline
 set colorcolumn=80
 
 " -----------------------------------------------------------------------------
-" => GUI
+" => GUI & UI
 " -----------------------------------------------------------------------------
 
 " List of flags that specify how the GUI works
 set guioptions-=T
 set guioptions+=e
+
+" Set line space
+set linespace=1
 
 " -----------------------------------------------------------------------------
 " => Messages and info
