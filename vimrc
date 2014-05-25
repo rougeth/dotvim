@@ -15,7 +15,6 @@ Bundle 'gmarik/Vundle.vim'
 " Plugins
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
-"Bundle 'Lokaltog/powerline'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'mattn/emmet-vim'
@@ -23,14 +22,8 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'ervandew/supertab'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'sjl/gundo.vim'
-"Bundle 'tpope/vim-surround'
-"Bundle 'mattn/gist-vim'
 Bundle 'scrooloose/syntastic'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'davidhalter/jedi-vim'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
