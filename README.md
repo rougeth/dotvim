@@ -30,15 +30,14 @@ My **VIm** configuration files.
 	$ git submodule init
 	$ git submodule update
 	```
-
-3. Install all plugins:
-
-	`$ vim +PluginInstall +qall`
 	
-4. Link **vimrc**: 
+3. Link **vimrc**: 
 
 	`$ ln -s ~/.vim/vimrc ~/.vimrc`
 
- 
+4. Install all plugins:
+
+	`$ vim +PluginInstall +qall`
+	
 
 To make [vim-airline](https://github.com/bling/vim-airline/) integration with [Powerline](https://github.com/Lokaltog/powerline)'s fonts work, you need to install one of the fonts in [powerline-fonts](https://github.com/Lokaltog/powerline-fonts) repository (following their instructions to install) and then adapt *vimrc* to support the font you choose.
