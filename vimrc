@@ -47,6 +47,10 @@ nmap <c-b> :CtrlPBuffer<cr>
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
+" GitGutter
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
 " -----------------------------------------------------------------------------
 " => Moving around, searching and patterns
 " -----------------------------------------------------------------------------
