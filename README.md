@@ -22,7 +22,7 @@ My **VIm** configuration files.
 
 1. Clone the repository:
 
-	`$ git clone https://github.com/rougeth/dotvim.git ~/.vim`
+	`$ git clone https://github.com/rougeth/dotvim.git ~/.vim && cd ~/.vim`
 
 2. Initialize and update Vundle.vim submodule:
 
