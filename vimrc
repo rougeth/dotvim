@@ -1,4 +1,29 @@
 " -----------------------------------------------------------------------------
+"        __      __ _    ___
+"   ____/ /___  / /| |  / (_)___ ___
+"  / __  / __ \/ __/ | / / / __ `__ \
+" / /_/ / /_/ / /_ | |/ / / / / / / /
+" \__,_/\____/\__/ |___/_/_/ /_/ /_/
+"
+"
+" Author: Marco Rougeth <marco at rougeth.com>
+"
+" Content:
+"   - Important
+"   - Plugin settings
+"   - Moving around, searching and patterns
+"   - Displaying text
+"   - Syntax, highlighting and spelling
+"   - GUI & UI
+"   - Messages and info
+"   - Editing text
+"   - Tabs and indenting
+"   - Reading and writing files
+"   - Command line editing
+"   - Keys mapping
+"   - Others
+
+" -----------------------------------------------------------------------------
 " => Important
 " -----------------------------------------------------------------------------
 
@@ -31,11 +56,11 @@ call vundle#end()
 set encoding=utf-8
 
 " -----------------------------------------------------------------------------
-" => Plugins settings
+" => Plugin settings
 " -----------------------------------------------------------------------------
 
 " Airline
-set guifont=Ubuntu\ Mono\ derivative\ Powerline:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set noshowmode
@@ -51,6 +76,8 @@ let NERDTreeQuitOnOpen = 1
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 
+" delimitMate
+au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
 " -----------------------------------------------------------------------------
 " => Moving around, searching and patterns
 " -----------------------------------------------------------------------------
@@ -184,12 +211,23 @@ set wildignore=*.o,~*,*.pyc
 set wildmenu
 
 " -----------------------------------------------------------------------------
-" => Mapping some keys
+" => Keys mapping
 " -----------------------------------------------------------------------------
+
+" Changing <ESC>
+imap jj <esc>
 
 " Improve up/down movement on wrapped lines (vimbits)
 nnoremap j gj
 nnoremap k gk
+
+" Jump to the top and bottom line using K and J
+noremap J L
+noremap K H
+
+" Jump to start and end of line using the home row keys
+noremap H ^
+noremap L $
 
 " Easier split navigations with Ctrl-(h, j, k, l)
 nnoremap <c-h> <c-w><c-h>
