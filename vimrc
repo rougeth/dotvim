@@ -60,7 +60,7 @@ set encoding=utf-8
 " -----------------------------------------------------------------------------
 
 " Airline
-set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set noshowmode
@@ -134,6 +134,9 @@ set colorcolumn=80
 " -----------------------------------------------------------------------------
 " => GUI & UI
 " -----------------------------------------------------------------------------
+
+set guioptions+=lrb
+set guioptions-=lrb
 
 " List of flags that specify how the GUI works
 set guioptions-=T
