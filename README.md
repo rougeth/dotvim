@@ -8,7 +8,7 @@ My **VIm** configuration files.
 * [Ctrlp](https://github.com/kien/ctrlp.vim)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Airline](https://github.com/bling/vim-airline)
-* [GitGutter](https://github.com/irblade/vim-gitgutter)
+* [GitGutter](https://github.com/airblade/vim-gitgutter)
 * [Emmet](https://github.com/mattn/emmet-vim)
 * [DelimitMate](https://github.com/Raimondi/delimitMate)
 * [SuperTab](https://github.com/ervandew/supertab)
