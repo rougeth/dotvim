@@ -60,7 +60,7 @@ set encoding=utf-8
 " -----------------------------------------------------------------------------
 
 " Airline
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
 set laststatus=2
 set noshowmode
@@ -119,7 +119,7 @@ set t_Co=256
 set background=dark
 
 " Set color scheme
-colorscheme hybrid
+colorscheme Tomorrow-Night
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
