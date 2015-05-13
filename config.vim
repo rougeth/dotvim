@@ -1,45 +1,4 @@
 " -----------------------------------------------------------------------------
-" => Important
-" -----------------------------------------------------------------------------
-
-" Disable Vi compatibility
-set nocompatible
-
-" Enable Vundle
-filetype off
-"set rtp+=~/.vim/bundle/vundle/
-"call vundle#rc()
-
-" Let Vundle manage Vandle
-"Bundle 'gmarik/vundle'
-" Plugins
-"Bundle 'kien/ctrlp.vim'
-"Bundle 'Lokaltog/powerline'
-"Bundle 'airblade/vim-gitgutter'
-"Bundle 'mattn/emmet-vim'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'ervandew/supertab'
-"Bundle 'tomtom/tcomment_vim'
-"Bundle 'sjl/gundo.vim'
-"Bundle 'tpope/vim-surround'
-"Bundle 'mattn/gist-vim'
-"Bundle 'scrooloose/syntastic'
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-
-" -----------------------------------------------------------------------------
-" => PluginsPowerline
-" -----------------------------------------------------------------------------
-
-" Powerline
-"set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
-set laststatus=2
-set noshowmode
-
-" Ctrlp
-nmap <c-b> :CtrlPBuffer<cr>
-
-" -----------------------------------------------------------------------------
 " => Moving around, searching and patterns
 " -----------------------------------------------------------------------------
 
@@ -61,7 +20,7 @@ set splitright
 " set cmdheight=2 "Not need with Powerline
 
 " Width of the diplay
-set columns=84
+"set columns=84
 
 " Show the line number for each line
 set number
@@ -70,6 +29,9 @@ set number
 " => Syntax, highlighting and spelling
 " -----------------------------------------------------------------------------
 
+" Enable syntax highlight
+syntax on
+
 " Enable 256 colors
 set t_Co=256
 
@@ -77,7 +39,7 @@ set t_Co=256
 set background=dark
 
 " Set color scheme
-colorscheme hybrid
+colorscheme base16-default
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
@@ -90,12 +52,18 @@ set cursorline
 set colorcolumn=80
 
 " -----------------------------------------------------------------------------
-" => GUI
+" => GUI & UI
 " -----------------------------------------------------------------------------
+
+set guioptions+=lrb
+set guioptions-=lrb
 
 " List of flags that specify how the GUI works
 set guioptions-=T
 set guioptions+=e
+
+" Set line space
+set linespace=1
 
 " -----------------------------------------------------------------------------
 " => Messages and info
@@ -160,36 +128,10 @@ set autoread
 set history=100
 
 " List of patterns to ignore files for file name completion
-set wildignore=*.o,~*,*.pyc
+set wildignore=*.o,~*,*.pyc,bower_components,node_modules
 
 " Command-line completion shows a list of matches
 set wildmenu
-
-" -----------------------------------------------------------------------------
-" => Mapping some keys
-" -----------------------------------------------------------------------------
-
-" Improve up/down movement on wrapped lines (vimbits)
-nnoremap j gj
-nnoremap k gk
-
-" Easier split navigations with Ctrl-(h, j, k, l)
-nnoremap <c-h> <c-w><c-h>
-nnoremap <c-j> <c-w><c-j>
-nnoremap <c-k> <c-w><c-k>
-nnoremap <c-l> <c-w><c-l>
-
-" F10 cleans up the search history
-map <f10> :let @/ = ""<cr>
-
-" Select all text in current buffer
-map <Leader>a ggVG
-
-" Use system clipboard with C-y and C-p
-nnoremap <C-y> "+y
-vnoremap <C-y> "+y
-nnoremap <C-p> "+gP
-vnoremap <C-p> "+gP
 
 " -----------------------------------------------------------------------------
 " => Others
