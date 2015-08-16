@@ -25,46 +25,37 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Visual
-NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'godlygeek/csapprox'
-NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'sheerun/dracula-theme'
 
 " Interface and navigation
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
 
 " Utility
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'ervandew/supertab'
-NeoBundle 'scrooloose/nerdcommenter'
+"NeoBundle 'tpope/vim-surround'
+"NeoBundle 'tpope/vim-commentary.git'
+"NeoBundle 'Townk/vim-autoclose'
+"NeoBundle 'ervandew/supertab'
+"NeoBundle 'scrooloose/nerdcommenter'
 
 " Git
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'airblade/vim-gitgutter'
 
-" Code Completion
-NeoBundle 'Valloric/YouCompleteMe'
-
 " Python
-NeoBundle 'jmcantrell/vim-virtualenv'
 NeoBundle 'hdima/python-syntax'
-NeoBundle 'hynek/vim-python-pep8-indent'
-NeoBundle 'vim-scripts/django.vim'
-NeoBundle 'nvie/vim-flake8'
 
 " Javascript
-NeoBundle 'elzr/vim-json'
-NeoBundle 'pangloss/vim-javascript'
+"NeoBundle 'elzr/vim-json'
+"NeoBundle 'pangloss/vim-javascript'
 
 " HTML
-NeoBundle 'amirh/HTML-AutoCloseTag'
-NeoBundle 'hail2u/vim-css3-syntax'
+"NeoBundle 'amirh/HTML-AutoCloseTag'
+"NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'mattn/emmet-vim'
 
 " Markdown
-NeoBundle 'tpope/vim-markdown'
+"NeoBundle 'tpope/vim-markdown'
 
 " -----------------------------------------------
 

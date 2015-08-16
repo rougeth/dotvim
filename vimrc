@@ -14,9 +14,11 @@
 " Disable Vi compatibility
 set nocompatible
 
-
 " Plugin activation
 source ~/.vim/neobundle.vim
+
+" Mappings
+source ~/.vim/mappings.vim
 
 " Config
 source ~/.vim/config.vim
