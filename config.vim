@@ -39,7 +39,7 @@ set t_Co=256
 set background=dark
 
 " Set color scheme
-colorscheme base16-default
+colorscheme dracula
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
