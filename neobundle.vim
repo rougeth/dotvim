@@ -25,8 +25,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Visual
-NeoBundle 'godlygeek/csapprox'
-NeoBundle 'sheerun/dracula-theme'
+NeoBundle 'rougeth/papercolor-theme'
 
 " Interface and navigation
 NeoBundle 'scrooloose/nerdtree'
@@ -53,6 +52,8 @@ NeoBundle 'hdima/python-syntax'
 "NeoBundle 'amirh/HTML-AutoCloseTag'
 "NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'JulesWang/css.vim'
+NeoBundle 'cakebaker/scss-syntax.vim'
 
 " Markdown
 "NeoBundle 'tpope/vim-markdown'

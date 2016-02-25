@@ -39,7 +39,7 @@ set t_Co=256
 set background=dark
 
 " Set color scheme
-colorscheme dracula
+colorscheme PaperColor
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
@@ -143,3 +143,7 @@ au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|
 
 " Automatically remove all trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
