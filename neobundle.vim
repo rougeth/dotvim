@@ -30,6 +30,8 @@ NeoBundle 'rougeth/papercolor-theme'
 " Interface and navigation
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 
 " Utility
 "NeoBundle 'tpope/vim-surround'
@@ -40,13 +42,16 @@ NeoBundle 'kien/ctrlp.vim'
 
 " Git
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'tpope/vim-fugitive'
 
 " Python
 NeoBundle 'hdima/python-syntax'
 
 " Javascript
 "NeoBundle 'elzr/vim-json'
-"NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'justinj/vim-jsx'
+NeoBundle 'isruslan/vim-es6'
 
 " HTML
 "NeoBundle 'amirh/HTML-AutoCloseTag'
@@ -57,6 +62,9 @@ NeoBundle 'cakebaker/scss-syntax.vim'
 
 " Markdown
 "NeoBundle 'tpope/vim-markdown'
+
+" Others
+NeoBundle 'junegunn/goyo.vim'
 
 " -----------------------------------------------
 
