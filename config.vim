@@ -147,3 +147,4 @@ autocmd BufWritePre * :%s/\s\+$//e
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
+set backupcopy=yes
