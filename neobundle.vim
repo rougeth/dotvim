@@ -35,6 +35,7 @@ NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
 
 " Utility
+NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'tpope/vim-surround'
 "NeoBundle 'tpope/vim-commentary.git'
 "NeoBundle 'Townk/vim-autoclose'
