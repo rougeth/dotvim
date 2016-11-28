@@ -26,6 +26,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Visual
 NeoBundle 'rougeth/papercolor-theme'
+NeoBundle 'dracula/vim'
 
 " Interface and navigation
 NeoBundle 'scrooloose/nerdtree'
