@@ -12,6 +12,10 @@ set smartcase
 set splitbelow
 set splitright
 
+" Number of screen lines to keep above and below the cursor. This will make
+" some context visible around where you are working.
+set scrolloff=5
+
 " -----------------------------------------------------------------------------
 " => Displaying text
 " -----------------------------------------------------------------------------
@@ -23,7 +27,7 @@ set splitright
 "set columns=84
 
 " Show the line number for each line
-set number
+set nonumber
 
 " -----------------------------------------------------------------------------
 " => Syntax, highlighting and spelling
@@ -34,6 +38,7 @@ syntax on
 
 " Enable 256 colors
 set t_Co=256
+set termguicolors
 
 " The background color brightness
 set background=dark
@@ -140,9 +145,6 @@ set wildmenu
 " This beauty remembers where you were the last time you edited the file, and
 " returns to the same position. Seriously, it's awesome.
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
-
-" Automatically remove all trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2

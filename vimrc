@@ -15,7 +15,7 @@
 set nocompatible
 
 " Plugin activation
-source ~/.vim/neobundle.vim
+source ~/.vim/plugins.vim
 
 " Mappings
 source ~/.vim/mappings.vim
@@ -25,3 +25,5 @@ source ~/.vim/config.vim
 
 " Plugin config
 source ~/.vim/plugin_config.vim
+
+set t_ut=
