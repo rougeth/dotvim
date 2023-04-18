@@ -7,12 +7,21 @@ let NERDTreeQuitOnOpen=1
 " CtrlP
 map <C-b> :CtrlPBuffer<CR>
 
-" Airline
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#hunks#enabled = 0
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
+" lualine
+lua << END
+require('lualine').setup {
+    options = {
+        theme = 'tokyonight'
+    }
+}
+END
+
+" Telescope
+nnoremap <leader>f <cmd>Telescope find_files<cr>
+nnoremap <leader>b <cmd>Telescope buffers<cr>
+nnoremap <leader>G <cmd>Telescope live_grep<cr>
+nnoremap <leader>g <cmd>Telescope live_grep vimgrep_arguments=rg,--vimgrep,--smart-case,-g,!test<cr>
+nnoremap <leader>h <cmd>Telescope help_tags<cr>
 
 " Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -31,3 +40,9 @@ let g:gitgutter_sign_modified = '|'
 let g:gitgutter_sign_removed = '|'
 let g:gitgutter_sign_removed_first_line = '|'
 let g:gitgutter_sign_modified_removed = '|'
+
+" Coc.vim
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)

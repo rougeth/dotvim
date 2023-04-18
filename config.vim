@@ -38,13 +38,13 @@ syntax on
 
 " Enable 256 colors
 set t_Co=256
-set termguicolors
+"set termguicolors
 
 " The background color brightness
 set background=dark
 
 " Set color scheme
-colorscheme dracula
+colorscheme tokyonight-night
 
 " Type of file; triggers the FileType event when set
 filetype plugin on
@@ -150,3 +150,11 @@ autocmd FileType html setlocal shiftwidth=2 tabstop=2 colorcolumn=
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 set backupcopy=yes
+"set foldmethod=indent
+
+nnoremap <space> za
+vnoremap <space> zf
+
+highlight Normal ctermbg=none
+
+let mapleader = " "
